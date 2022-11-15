@@ -1,5 +1,8 @@
 # Amplication storage gateway
 
+Amplication storage gateway is the component that provides API to access files on the data file system. 
+Used by the client to display source code.
+
 ## Environment Variables:
 | Environment | Description | Value       |
 | ----------- | ----------- | ----------- |
