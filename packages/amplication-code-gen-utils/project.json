@@ -1,0 +1,35 @@
+{
+  "name": "amplication-code-gen-utils",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/amplication-code-gen-utils/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/amplication-code-gen-utils",
+        "tsConfig": "packages/amplication-code-gen-utils/tsconfig.lib.json",
+        "packageJson": "packages/amplication-code-gen-utils/package.json",
+        "main": "packages/amplication-code-gen-utils/src/index.ts",
+        "assets": ["packages/amplication-code-gen-utils/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/amplication-code-gen-utils/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/packages/amplication-code-gen-utils"],
+      "options": {
+        "jestConfig": "packages/amplication-code-gen-utils/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

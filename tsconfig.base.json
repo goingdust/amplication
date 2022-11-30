@@ -22,6 +22,9 @@
       "@amplication/code-gen-types/*": [
         "packages/amplication-code-gen-types/src/*"
       ],
+      "@amplication/code-gen-utils": [
+        "packages/amplication-code-gen-utils/src/index.ts"
+      ],
       "@amplication/design-system": [
         "packages/amplication-design-system/src/index.ts"
       ],
