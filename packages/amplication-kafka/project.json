@@ -13,7 +13,7 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/packages/amplication-kafka"],
+      "outputs": ["{workspaceRoot}/coverage/packages/amplication-kafka"],
       "options": {
         "jestConfig": "packages/amplication-kafka/jest.config.ts",
         "passWithNoTests": true
